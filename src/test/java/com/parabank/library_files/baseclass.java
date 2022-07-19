@@ -33,7 +33,6 @@ public class baseclass {
 				"C:\\Users\\cw\\eclipse-workspace\\AAAA\\extentreports\\report" + ".html");
 		reports = new ExtentReports();
 		reports.attachReporter(htmlreporter);
-
 		// add details
 		reports.setSystemInfo("machine", "pc 1");
 		reports.setSystemInfo("user", "Tariq Hussain");
