@@ -4,6 +4,8 @@ package com.parabank.library_files;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
@@ -26,7 +28,7 @@ public class baseclass {
 	public ExtentReports reports;
 	public ExtentTest test;
 	public WebDriver driver;
-
+	public static Logger logs=LogManager.getLogger(log4j.class.getName());
 	@BeforeTest
 	public void intreports() {
 		htmlreporter = new ExtentSparkReporter(
