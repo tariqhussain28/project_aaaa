@@ -32,7 +32,7 @@ public class login_test extends baseclass
 		login.inpbankpassword(utilityclass.propertyfiledata("password"));
 		login.clickbankloginbtn();
 		String actresult=home.gethomepageusername();
-		String expresult="Welcome wwwwwwwe eeee";
+		String expresult="Welcome wwwwwwwe eee";
 		test=reports.createTest("vrify username");
 		Assert.assertEquals(actresult, expresult);
 	}
